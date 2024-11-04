@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical File PDF Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Practical File PDF Generator</h1>
+        <p>Fill out the details below to generate a comprehensive PDF for your practical file.</p>
+        <form id="pdfForm">
+            <div class="form-group">
+                <label for="txtUniversity">University Name</label>
+                <input type="text" id="txtUniversity" placeholder="Enter University Name" required>
+            </div>
+            <div class="form-group">
+                <label for="txtDepartment">Department</label>
+                <input type="text" id="txtDepartment" placeholder="Enter Department" required>
+            </div>
+            <div class="form-group">
+                <label for="txtSubject">Subject</label>
+                <input type="text" id="txtSubject" placeholder="Enter Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="txtSubmittedTo">Submitted To</label>
+                <input type="text" id="txtSubmittedTo" placeholder="Enter Name of Professor" required>
+            </div>
+            <div class="form-group">
+                <label for="txtSubmittedBy">Submitted By</label>
+                <input type="text" id="txtSubmittedBy" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="txtRollNo">Roll No</label>
+                <input type="text" id="txtRollNo" placeholder="Enter Roll No" required>
+            </div>
+            <button type="submit" class="btn-submit">Generate PDF</button>
+        </form>
+    </div>
+</body>
+</html>
