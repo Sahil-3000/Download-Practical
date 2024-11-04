@@ -143,7 +143,7 @@ document.getElementById('pdfForm').addEventListener('submit', async function(eve
                     const blob = new Blob([mergedPdfBytes], { type: 'application/pdf' });
                     const link = document.createElement('a');
                     link.href = URL.createObjectURL(blob);
-                    link.download = `${submittedBy}_Merged_Practical_File.pdf`;
+                    link.download = `${submittedBy}_OOPs Practical File.pdf`;
                     link.click();
                 });
             });
